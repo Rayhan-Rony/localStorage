@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex bg-slate-700 h-screen w-screen items-center justify-center">
+    <div class="space-y-4">
+      <input
+        id="name"
+        class="bg-white border border-black p-4 rounded-md w-full"
+        type="text"
+        placeholder="Please Enter Your Name"
+      /><br />
+      <input
+        id="quantity"
+        class="bg-white border border-black p-4 rounded-md w-full"
+        type="number"
+        placeholder="Please Enter Quantity"
+      />
+
+      <div class="">
+        <button
+          id="add-to-cart-btn"
+          class="bg-lime-500 text-white p-3 border-none rounded-lg w-full"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <ul id="cart-container"></ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
